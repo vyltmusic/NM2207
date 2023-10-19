@@ -1,0 +1,18 @@
+---
+title: "Week 9 Diary Entry"
+author: "Yang Juan Hun"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The topic I have finalized on is Dungeons and Dragons Fifth Edition (DnD 5e), a tabletop role-playing game. The specific data I am looking at is character creation choices from approximately 8,000 DnD 5e players all over the world.
+
+The data sources I will be using are from https://github.com/oganm/dnddata, a Github repository which compiles data on character choices in DnD 5e into an R package.
+
+
