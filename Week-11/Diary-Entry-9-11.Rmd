@@ -42,13 +42,13 @@ The visualization I am intending to use is primarily a bar graph depicting the f
 
 > Source: https://arcaneeye.com/dm-tools-5e/what-are-the-tiers-of-play-in-dd/
 
-I intend to make the app interactive through the highly customizable interface, using Shiny. I am using multiple types of inputs, such as group checkbox inputs, radio buttons and sliders to give the user highly intuitive control over the visualization of the data. The data itself will be visualized using a bar graph generated with ggplot2. Using these inputs, the user will be able to choose what DnD statistic they are analysing, what classes they would like to analyse, whether they will include characters with at least one of the selected classes or only the selected classes, the minimum and maximum level of the characters they are analysing, and how sensitive the outlier detection will be (the scaling factor of the IQR).
+I intend to make the app interactive through the highly customizable interface, using Shiny. I am using multiple types of inputs, such as group checkbox inputs, radio buttons and sliders to give the user highly intuitive control over the visualization of the data. The data itself will be visualized using a bar graph generated with ggplot2. Using these inputs, the user will be able to choose what DnD statistic they are analysing, what classes they would like to analyse, whether they will include characters with at least one of the selected classes or only the selected classes, the minimum and maximum level of the characters they are analysing, how sensitive the outlier detection will be (the scaling factor of the IQR), and the type of graph they wish to view (bar graph or histogram). If they wish to view a histogram, they can also customize the number of bins shown.
 
 
 ```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 tabl <- "
 | Topics | Week |
-|---------------|------:|
+|---------------|:------:|
 | Filter | 1 |
 | Select | 3 |
 | Summary statistics | 4 |
@@ -62,6 +62,7 @@ tabl <- "
 | Identifying NA values row-wise | |
 | grepl() | |
 | Updating Shiny Inputs | |
+| Creating Conditional Shiny Inputs | |
 "
 cat(tabl)
 ```
